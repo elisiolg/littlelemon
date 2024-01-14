@@ -30,7 +30,8 @@ export const dishes = [
   ];
 
 const Highlights = () => {
-    const navigate = useNavigate();
+    const navigate = useNavigate()
+    const goToMenu = () => navigate('/menu');
     const menuItemsHtml = dishes.map((dish, index) => {
         return (
           <span key={index}>
@@ -45,10 +46,10 @@ const Highlights = () => {
     });
 
   return (
-      <section className="App-Highlights">
+      <section className="App-Highlights" >
         <div className="specials-header">
             <h2>Specials</h2>
-            <button className="button dark" onClick={() => navigate('menu')} aria-disabled="false">
+            <button className="button dark" onClick={goToMenu} aria-disabled="false" >
                 Online Menu
                 </button>
             </div>

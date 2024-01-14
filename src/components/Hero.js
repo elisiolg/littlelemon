@@ -11,6 +11,7 @@ function Image() {
 class Hero extends React.Component {
   static Action = Action
   static Image = Image
+  
 
   render() {
     const {
@@ -22,6 +23,7 @@ class Hero extends React.Component {
     } = this.props;
     const action = children.find(child => child.type === Action)
     const image = children.find(child => child.type === Image)
+    
 
     return (
 

@@ -118,6 +118,7 @@ p {
   flex-direction: row;
   height: 75px;
   width: 300px;
+  cursor: pointer;
 }
 
 
@@ -258,7 +259,7 @@ p {
 }
 
 .App-Highlights {
-  background-color: unset;
+  background-color: #FFFFEC;
   padding: 2rem;
 }
 
